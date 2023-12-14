@@ -2,6 +2,10 @@
   "name": "gemini-demo",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "format:fix": "prettier --write '*.ts'"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
@@ -9,6 +13,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.1.1"
+    "@google/generative-ai": "^0.1.1",
+    "prettier": "^3.1.1"
   }
 }
